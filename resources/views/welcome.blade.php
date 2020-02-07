@@ -81,8 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Todos App
-                </div>
+                    <a href="/todos">Todos</a>                </div>
 
             </div>
         </div>

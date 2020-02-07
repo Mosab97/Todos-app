@@ -15,4 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('about','AboutController@index');
+Route::get('todos','TodosController@index');
+Route::get('/todos/{todo}','TodosController@show');
+
+Route::get('new-todos','TodosController@create');
+Route::post('store-todos','TodosController@store');
+Route::get('todos/{todo}/edit','TodosController@edit');
+Route::put('todos/{todo}/update-todos','TodosController@update');
+Route::delete('todos/{todo}/delete-todos','TodosController@destroy');
